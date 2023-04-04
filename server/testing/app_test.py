@@ -31,7 +31,7 @@ class TestApp:
 
             af = BakedGood.query.filter_by(name="Apple Fritter").first()
 
-            assert response.status_code == 201
+            assert response.status_code == 200
             assert response.content_type == 'application/json'
             assert af.id
 
